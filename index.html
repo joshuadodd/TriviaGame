@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
     <title>TrivialTrivia</title>
 </head>
+
 <body>
+    <div class='container'>
+        <!-- this button is created to start the game -->
+        <button class='startGame'>Click Me to Play!</button>
+        <!-- a wrapper div holds all the items that will be displayed after the startGame button is clicked -->
+        <div class='wrapper'>
+        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
 
-<!-- this button is created to start the game -->
-    <button class='startGame'>Click Me to Play!</button>
-<!-- a wrapper div holds all the items that will be displayed after the startGame button is clicked -->
-    <div class='wrapper'>
-
-        <h1 class='header'>Totally Trivial Trivia Game!</h1>
-<!-- div to hold countdown timer -->
-        <div class='timer' id='timeLeft'></div>
-<!-- div to hold all the questions -->
-        <div class='form' id='questions-container'></div>
-
+            <body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtaXkcMv9MVCl_p-7TdXlVjwrf9SxiSjue7y6kQ75Jb_tPIgfZgA">
+                <h1 class='header'>Trivia Game!</h1>
+                <!-- div to hold countdown timer -->
+                <div class='timer' id='timeLeft'></div>
+                <!-- div to hold all the questions -->
+                <div class='form' id='questions-container'></div>
+        </div>
+        <!-- button to end game if player finishes the game before the time is up -->
+        <button id='doneButton'>Done</button>
+        <!-- message to be displayed when time is up -->
+        <div class='message' id='messageDiv'></div>
+        <!-- div to display the results of the game -->
+        <div class='results'></div>
     </div>
-<!-- button to end game if player finishes the game before the time is up -->
-    <button id='doneButton'>Done</button>
-<!-- message to be displayed when time is up -->
-    <div class='message' id='messageDiv'></div>
-<!-- div to display the results of the game -->
-    <div class='results'></div>
-<!-- linking to jquery and the local js file -->
+    <!-- linking to jquery and the local js file -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script type='text/javascript' src='assets/javascript/app.js'></script> 
-</body>
+    <script type='text/javascript' src='assets/javascript/app.js'></script>
+    </body>
+
 </html>
