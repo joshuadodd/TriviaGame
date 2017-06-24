@@ -6,87 +6,101 @@
 </head>
 
 <body>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <body background="http://www.no-zaku.com/background/wp-content/uploads/sites/9/2016/11/Simple-Best-Background-Website.jpg">
+    <div class="container">
+        <div>
+            <h1>Trivia Time!</h1>
+            <p> You have <span id="countdowntimer">30 </span> Seconds to Finish!</p>
+            <script type="text/javascript">
+            var timeleft = 30;
+            var downloadTimer = setInterval(function() {
+                timeleft--;
+                document.getElementById("countdowntimer").textContent = timeleft;
+                if (timeleft <= 0)
+                    clearInterval(downloadTimer);
+            }, 1000);
+            </script>
+        </div>
 
-<body background="http://www.no-zaku.com/background/wp-content/uploads/sites/9/2016/11/Simple-Best-Background-Website.jpg">
-    <div>
-        <h1>What Type of Date Are You? (Dude Edition)</h1>
-    </div>
-    <div id="start-button">
-    <button type="button" class="btn btn-info">Start Timer</button>
-    <div class="main-container">
-    <div class="questions">
-        <p>1. You see a girl waiting at the bus stop. She is exactly your type. How do you get her number?</p>
-        <form class="options">
-            <input class="option" type="radio" name="question1" value=4>You walk right up to her, strike up a conversation, and ask for her number
-            <br>
-            <input class="option" type="radio" name="question1" value=3>You wait a few days until you get the courage to go and talk to her
-            <br>
-            <input class="option" type="radio" name="question1" value=2>You tell one of your mutual friends that you like her
-            <br>
-            <input class="option" type="radio" name="question1" value=1>You wait for her to come to you</br>
-        </form>
-    </div>
-    <div class="questions">
-        <p>2. You guys decide to go out on a date. Where do you decide to take her?</p>
-        <form class="options">
-            <input class="option" type="radio" name="question2" value=4>You take her out for a short coffee and talk about life and relationships
-            <br>
-            <input class="option" type="radio" name="question2" value=3>You take her out on a creative date and ask her questions about her life and you respond in kind, tried-and-true interview-style
-            <br>
-            <input class="option" type="radio" name="question2" value=2>You take her out to a nice restaurant and dress in your best clothes. You ask the same questions as above
-            <br>
-            <input class="option" type="radio" name="question2" value=1>You take her to the best restaurant and hope that your clothes does most of the talking. If not, you've got great stories to tell up your sleeves
-            <br>
-        </form>
-    </div>
-    <div class="questions">
-        <p>3. You think you had a great first date. What do you do between now and your second date?</p>
-        <form class="options">
-            <input class="option" type="radio" name="question3" value=4>You send her a text telling her you'll have out again soon. No big deal. Another date with another girl, coming up!
-            <br>
-            <input class="option" type="radio" name="question3" value=3>You send her a text telling her how much fun you had and can't wait for the next date.
-            <br>
-            <input class="option" type="radio" name="question3" value=2>In addition to doing above, you call her and ask her how she thinks the date went and when/where the next date is
-            <br>
-            <input class="option" type="radio" name="question3" value=1>In addition to doing above, you think about how lucky you are for finally finding an amazing girl. You hope to start a relationship ASAP
-            <br>
-        </form>
-    </div>
-    <div class="questions">
-        <p>4. Crap! You just remembered you have a huge project due this Friday. This might be a problem. How many dates do you have this week?</p>
-        <form>
-            <input class="option" type="radio" name="question4" value=4>More than 5. You're going to have to cancel one of them.
-            <br>
-            <input class="option" type="radio" name="question4" value=3>You have a few dates in the pipeline, just testing the waters. You can still make the dates
-            <br>
-            <input class="option" type="radio" name="question4" value=2>You have one date because you're a one woman kind of guy
-            <br>
-            <input class="option" type="radio" name="question4" value=1>You have one date. You don't date much, in general.
-            <br>
-        </form>
-    </div>
-    <div class="questions">
-        <p>5. Finally, how spontaneous are you?</p>
-        <form>
-            <input class="option" type="radio" name="question5" value=4>YOLO is your middle name. Your amusement > all else
-            <br>
-            <input class="option" type="radio" name="question5" value=3>You may not be the most wild or crazy person, but you are definitely down for good times
-            <br>
-            <input class="option" type="radio" name="question5" value=2>You like to have fun as much as the next guy, as long as things don't get too out of hand
-            <br>
-            <input class="option" type="radio" name="question5" value=1>I like to plan ahead, no matter what the situation, work or play
-            <br>
-        </form>
-    </div>
-    <br>
-</div>
+        <div id="start-button">
+            <button type="button" class="btn btn-info">Start Timer</button>
+            <div class="main-container">
+                <div class="questions">
+                    <p>1. What is the most spoken language in the world?</p>
+                    <form class="options">
+                        <input class="option" type="radio" name="question1" value=4>Chinese
+                        <br>
+                        <input class="option" type="radio" name="question1" value=3>English
+                        <br>
+                        <input class="option" type="radio" name="question1" value=2>Italian
+                        <br>
+                        <input class="option" type="radio" name="question1" value=1>Spanish</br>
+                    </form>
+                </div>
+                <div class="questions">
+                    <p>2. What kind of animal did Bill Clinton have in office?</p>
+                    <form class="options">
+                        <input class="option" type="radio" name="question2" value=4>A cat named Socks
+                        <br>
+                        <input class="option" type="radio" name="question2" value=3>A parrot name RRRRR
+                        <br>
+                        <input class="option" type="radio" name="question2" value=2>A donkey named Jack
+                        <br>
+                        <input class="option" type="radio" name="question2" value=1>A woman named Monica
+                        <br>
+                    </form>
+                </div>
+                <div class="questions">
+                    <p>3. What is the longest river in the world?</p>
+                    <form class="options">
+                        <input class="option" type="radio" name="question3" value=4>Amazon
+                        <br>
+                        <input class="option" type="radio" name="question3" value=3>Nile
+                        <br>
+                        <input class="option" type="radio" name="question3" value=2>Mississippi
+                        <br>
+                        <input class="option" type="radio" name="question3" value=1>Congo
+                        <br>
+                    </form>
+                </div>
+                <div class="questions">
+                    <p>4. Which is the only country to have played in every World Cup?</p>
+                    <form>
+                        <input class="option" type="radio" name="question4" value=4>Brazil
+                        <br>
+                        <input class="option" type="radio" name="question4" value=3>Germany
+                        <br>
+                        <input class="option" type="radio" name="question4" value=2>Italy
+                        <br>
+                        <input class="option" type="radio" name="question4" value=1>United States
+                        <br>
+                    </form>
+                </div>
+                <div class="questions">
+                    <p>5. Why are flamingos pink?
+                    </p>
+                    <form>
+                        <input class="option" type="radio" name="question5" value=4>From eating shrimp
+                        <br>
+                        <input class="option" type="radio" name="question5" value=3>They love to dance
+                        <br>
+                        <input class="option" type="radio" name="question5" value=2>To blend in with the sunset on a beautiful beach
+                        <br>
+                        <input class="option" type="radio" name="question5" value=1>Because they are fabulous!
+                        <br>
+                    </form>
+                </div>
+                <br>
+            </div>
+        </div>
+        </div>
     </body>
-    
     <input type="button" id='next' value="Next" onlick="sum_values()">
+    <input type="button" id='done' value="Done" onlick="sum_values()">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script type='text/javascript' src='assets/javascript/app.js'></script>
 </body>
 
 </html>
-
