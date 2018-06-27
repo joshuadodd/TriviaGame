@@ -36,7 +36,7 @@ $("#btn btn-info").on("click", function() {
 
 });
 function startTimer(duration, display) {
-        $("#start-button").on("click", function() {
+        $(".btn btn-info").on("click", function() {
 
            function startTimer(secs) {
                 timeInSecs = parseInt(secs) - 1;
