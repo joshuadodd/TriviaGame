@@ -1,106 +1,41 @@
 <!DOCTYPE html>
-<html>
 
-<head>
-    <title></title>
-</head>
+<html lang="en-us">
 
-<body>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <head>
 
-    <body background="http://www.no-zaku.com/background/wp-content/uploads/sites/9/2016/11/Simple-Best-Background-Website.jpg">
-    <div class="container">
-        <div>
-            <h1>Trivia Time!</h1>
-            <p> You have <span id="countdowntimer">30 </span> Seconds to Finish!</p>
-            <script type="text/javascript">
-            var timeleft = 30;
-            var downloadTimer = setInterval(function() {
-                timeleft--;
-                document.getElementById("countdowntimer").textContent = timeleft;
-                if (timeleft <= 0)
-                    clearInterval(downloadTimer);
-            }, 1000);
-            </script>
+    <meta charset="UTF-8">
+    <title>Totally Trivial Trivia</title>
+
+    <!-- CSS Reset Sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+
+    <!-- Out Own CSS Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+      <h1>Totally Trivial Trivia!</h1>
+      <div id="sub-wrapper">
+        <div id="quiz-area">
+          <button id="start">Start</button>
         </div>
+      </div>
+    </div>
 
-        <div id="start-button">
-            <button type="button" class="btn btn-info">Start Timer</button>
-            <div class="main-container">
-                <div class="questions">
-                    <p>1. What is the most spoken language in the world?</p>
-                    <form class="options">
-                        <input class="option" type="radio" name="question1" value=4>Chinese
-                        <br>
-                        <input class="option" type="radio" name="question1" value=3>English
-                        <br>
-                        <input class="option" type="radio" name="question1" value=2>Italian
-                        <br>
-                        <input class="option" type="radio" name="question1" value=1>Spanish</br>
-                    </form>
-                </div>
-                <div class="questions">
-                    <p>2. What kind of animal did Bill Clinton have in office?</p>
-                    <form class="options">
-                        <input class="option" type="radio" name="question2" value=4>A cat named Socks
-                        <br>
-                        <input class="option" type="radio" name="question2" value=3>A parrot name RRRRR
-                        <br>
-                        <input class="option" type="radio" name="question2" value=2>A donkey named Jack
-                        <br>
-                        <input class="option" type="radio" name="question2" value=1>A woman named Monica
-                        <br>
-                    </form>
-                </div>
-                <div class="questions">
-                    <p>3. What is the longest river in the world?</p>
-                    <form class="options">
-                        <input class="option" type="radio" name="question3" value=4>Amazon
-                        <br>
-                        <input class="option" type="radio" name="question3" value=3>Nile
-                        <br>
-                        <input class="option" type="radio" name="question3" value=2>Mississippi
-                        <br>
-                        <input class="option" type="radio" name="question3" value=1>Congo
-                        <br>
-                    </form>
-                </div>
-                <div class="questions">
-                    <p>4. Which is the only country to have played in every World Cup?</p>
-                    <form>
-                        <input class="option" type="radio" name="question4" value=4>Brazil
-                        <br>
-                        <input class="option" type="radio" name="question4" value=3>Germany
-                        <br>
-                        <input class="option" type="radio" name="question4" value=2>Italy
-                        <br>
-                        <input class="option" type="radio" name="question4" value=1>United States
-                        <br>
-                    </form>
-                </div>
-                <div class="questions">
-                    <p>5. Why are flamingos pink?
-                    </p>
-                    <form>
-                        <input class="option" type="radio" name="question5" value=4>From eating shrimp
-                        <br>
-                        <input class="option" type="radio" name="question5" value=3>They love to dance
-                        <br>
-                        <input class="option" type="radio" name="question5" value=2>To blend in with the sunset on a beautiful beach
-                        <br>
-                        <input class="option" type="radio" name="question5" value=1>Because they are fabulous!
-                        <br>
-                    </form>
-                </div>
-                <br>
-            </div>
-        </div>
-        </div>
-    </body>
-    <input type="button" id='next' value="Next" onlick="sum_values()">
-    <input type="button" id='done' value="Done" onlick="sum_values()">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script type='text/javascript' src='assets/javascript/app.js'></script>
-</body>
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+  </body>
 
 </html>
+
