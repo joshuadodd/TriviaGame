@@ -10,5 +10,6 @@ This is a Trivia game using JavaScript for the logic and jQuery to manipulate HT
   * If the player chooses the wrong answer, tell the player they selected the wrong option and then display the correct answer. Wait a few seconds, then show the next question.
 
 * On the final screen, show the number of correct answers, incorrect answers, and an option to restart the game (without reloading the page).
+App Link: <a href="http://joshuaadodd.com/TriviaGame/" target="_blank">Triva Game</a>
 
 -------
